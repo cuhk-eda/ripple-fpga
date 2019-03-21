@@ -52,7 +52,7 @@ More details are in `Makefile`.
 * g++ (version 4.8.0) or other working c++ compliers
 * Boost (version >= 1.58)
 
-## Runing RippleFPGA
+## Running RippleFPGA
 
 ### Toy
 
