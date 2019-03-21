@@ -1,6 +1,15 @@
-# RippleFP
+# RippleFPGA
 
-RippleFPGA is for generating VLSI placement of UltraScale FPGAs.
+RippleFPGA is a simultaneous pack-and-place algorithm for FPGA developed by the research team supervised by Prof. Evangeline F.Y. Young in The Chinese University of Hong Kong. 
+It produces legalized placement solutions by effectively packing and placing instances from input circuits on the modern Xilinx FPGA architecture. 
+It aims to minimize the routed wirelength and routing congestion. The placement results can be evaluated by Xilinx Vivado® Design Suite.
+### Feature
+* Targeted on modern commercial FPGA architecture (Xilinx UltraScale XU095)
+* Analytical placement in Upper and Lower Bound Framework
+* Optimize wirelength and routing congestion
+* Results verified by Xilinx Vivado® software
+* Support large-scale benchmark circuits
+  
 More details are in the following papers:
 * Chak-Wa Pui, Gengjie Chen, Wing-Kai Chow, Jian Kuang, Ka-Chun Lam, Peishan Tu, Hang Zhang, Evangeline F.Y. Young, Bei Yu, [RippleFPGA: A Routability-Driven Placement for Large-Scale Heterogeneous FPGAs](http://ieeexplore.ieee.org/document/7827644/), 
 IEEE/ACM International Conference on Computer-Aided Design, pp. 67:1-67:8, Nov. 7-10, 2016.
@@ -9,14 +18,16 @@ IEEE/ACM International Conference on Computer-Aided Design, pp. 929-936, Nov. 13
 * Gengjie Chen, Chak-Wa Pui, Wing-Kai Chow, Ka-Chun Lam, Jian Kuang, Evangeline F. Y. Young and Bei Yu, [RippleFPGA: Routability-Driven Simultaneous Packing and Placement for Modern FPGAs](http://ieeexplore.ieee.org/document/8122004/), 
 IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, vol. 37, no. 10, pp. 2022–2035, 2018.
 
+
+
 ## Quick Start
 
 The simplest way to build and run RippleFPGA is as follows.
 ~~~
 $ git clone https://github.com/jordanpui/ripplefpga
-$ cd ripplefpga
+$ cd ripplefpga/src
 $ make mode=release_mt
-$ cd bin
+$ cd ../bin
 $ ./placer -aux toy_example/design.aux -out toy_example.out
 ~~~
 
@@ -29,7 +40,7 @@ $ git clone https://github.com/jordanpui/ripplefpga
 
 **Step 2:** Go to the project root and build by
 ~~~
-$ cd ripplefpga
+$ cd ripplefpga/src
 $ make mode=release_mt
 ~~~
 
