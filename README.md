@@ -103,7 +103,7 @@ All rights reserved
 
 
 
-ABSD LICENSE (adapted from the original BSD license) Redistribution of the any code, with or without modification, are permitted provided that the conditions below are met. 
+CU-DS LICENSE (adapted from the original BSD license) Redistribution of the any code, with or without modification, are permitted provided that the conditions below are met. 
 
 
 
