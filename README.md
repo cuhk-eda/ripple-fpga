@@ -18,7 +18,57 @@ IEEE/ACM International Conference on Computer-Aided Design, pp. 929-936, Nov. 13
 * Gengjie Chen, Chak-Wa Pui, Wing-Kai Chow, Ka-Chun Lam, Jian Kuang, Evangeline F. Y. Young and Bei Yu, [RippleFPGA: Routability-Driven Simultaneous Packing and Placement for Modern FPGAs](http://ieeexplore.ieee.org/document/8122004/), 
 IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, vol. 37, no. 10, pp. 2022–2035, 2018.
 
+### Results
+All the experiments were performed on a 64-bit Linux workstation with Intel Xeon 3.7GHz CPU and 16GB memory.
+The placer is run in 2 threads and routed wirelength is obtained from Xilinx Vivado® Design Suite with patches provided by the ISPD contest orgranizers.
 
+<table>
+<tr><th>ISPD2016 Benchmark </th><th>ISPD2017 Benchmark</th></tr>
+<tr><td>
+
+|  **Design**   | **Routed Wirelength** | **Runtime (Sec)** |
+| :-----------: | :-------------------: | :---------------: |
+| FPGA-example1 |         11151         |         2         |
+| FPGA-example2 |        3218541        |        247        |
+| FPGA-example3 |        9207106        |        422        |
+| FPGA-example4 |        9985928        |       1000        |
+|    FPGA01     |        350060         |        38         |
+|    FPGA02     |        635044         |        59         |
+|    FPGA03     |        3251264        |        232        |
+|    FPGA04     |        5492214        |        321        |
+|    FPGA05     |        9909270        |        357        |
+|    FPGA06     |        6144522        |        548        |
+|    FPGA07     |        9593240        |        654        |
+|    FPGA08     |        8087931        |        421        |
+|    FPGA09     |       12062928        |        681        |
+|    FPGA10     |        6972278        |       1046        |
+|    FPGA11     |       10918250        |        655        |
+|    FPGA12     |        7239553        |        798        |
+
+</td><td>
+
+|  **Design**  | **Routed Wirelength** | **Runtime (Sec)** |
+| :----------: | :-------------------: | :---------------: |
+| clk\_design1 |         23030         |         6         |
+| clk\_design2 |        313086         |        41         |
+| clk\_design3 |        1541629        |        185        |
+| clk\_design4 |        3134160        |        339        |
+| clk\_design5 |        4800900        |        485        |
+|  CLK-FPGA01  |        2011452        |        260        |
+|  CLK-FPGA02  |        2167861        |        236        |
+|  CLK-FPGA03  |        5265206        |        506        |
+|  CLK-FPGA04  |        3606567        |        328        |
+|  CLK-FPGA05  |        4660136        |        486        |
+|  CLK-FPGA06  |        5736998        |        532        |
+|  CLK-FPGA07  |        2325787        |        290        |
+|  CLK-FPGA08  |        1778292        |        232        |
+|  CLK-FPGA09  |        2530105        |        336        |
+|  CLK-FPGA10  |        4495500        |        465        |
+|  CLK-FPGA11  |        4189622        |        408        |
+|  CLK-FPGA12  |        3387586        |        365        |
+|  CLK-FPGA13  |        3833106        |        386        |
+
+</td></tr> </table>
 
 ## Quick Start
 
