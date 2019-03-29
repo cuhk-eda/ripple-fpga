@@ -73,7 +73,7 @@ The placer is run in 2 threads and routed wirelength is obtained from Xilinx Viv
 ## Quick Start
 
 The simplest way to build and run RippleFPGA is as follows.
-~~~
+~~~bash
 $ git clone https://github.com/jordanpui/ripplefpga
 $ cd ripplefpga/src
 $ make mode=release_mt
@@ -84,12 +84,12 @@ $ ./placer -aux toy_example/design.aux -out toy_example.out
 ## Building RippleFPGA
 
 **Step 1:** Download the source codes. For example,
-~~~
+~~~bash
 $ git clone https://github.com/jordanpui/ripplefpga
 ~~~
 
 **Step 2:** Go to the project root and build by
-~~~
+~~~bash
 $ cd ripplefpga/src
 $ make mode=release_mt
 ~~~
@@ -107,7 +107,7 @@ More details are in `Makefile`.
 ### Toy
 
 Go to the `bin` directory and run binary `placer` with a toy design:
-~~~
+~~~bash
 $ cd bin
 $ ./placer -aux toy_example/design.aux -out toy_example.out
 ~~~
@@ -116,7 +116,7 @@ $ ./placer -aux toy_example/design.aux -out toy_example.out
 
 Our placer is based on bookshelf format and was tested on two contest benchmarks [ISPD'16 Contest](http://www.ispd.cc/contests/16/) and [ISPD'17 Contest](http://www.ispd.cc/contests/17/), which can be downloaded via Dropbox ([ISPD16](https://www.dropbox.com/sh/9c74a6f4o0rrd2t/AAA3V_fiP15pV20fV62apLoqa?dl=0), [ISPD17](https://www.dropbox.com/sh/9aranna360wnez2/AABYc5n1Sak3AY3m25eJ7Nyka?dl=0)).
 After download the benchmarks and place them under folder `BM_DIR`, you can use our script `run.sh`:
-~~~
+~~~bash
 $ cd bin
 $ export BENCHMARK_PATH=BM_DIR
 $ ./run all
