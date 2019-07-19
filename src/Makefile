@@ -26,7 +26,7 @@ DEPFLAG = -MMD -MP
 CC		= g++-4.8 -std=c++11 $(OPT) $(WFLAG) $(DEPFLAG) $(INCLUDE)
 
 INCLUDE = -I. -I../../boost_1_62_0
-LIBS 	+= $(addprefix alg/, patoh/libpatoh.a lpsolve/lib64/liblpsolve55.a) \
+LIBS 	+= $(addprefix alg/, patoh/libpatoh.a lpsolve/liblpsolve55.a) \
 			-lboost_system -ldl
 
 CC_OBJS = main

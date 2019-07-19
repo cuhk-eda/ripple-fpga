@@ -2,7 +2,7 @@
 
 #include "clb2.h"
 #include "clb2_res_base.h"
-#include "alg/lpsolve/inc/lp_lib.h"
+#include "alg/lpsolve/lp_lib.h"
 
 class CLB2Result2 : public CLB2ResultBase {
     using CLB2ResultBase::CLB2ResultBase;
