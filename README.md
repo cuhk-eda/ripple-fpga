@@ -43,7 +43,7 @@ More details are in [`Makefile`](src/Makefile).
 
 ### Dependencies
 
-* g++ (version 4.8.0) or other working c++ compliers
+* [GCC](https://gcc.gnu.org/) (version 4.8.0) or other working c++ compliers
 * [Boost](https://www.boost.org/) (version >= 1.58)
 
 ## 2. How to Run
